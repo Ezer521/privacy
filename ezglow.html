@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EzGlow 隐私政策 · Privacy Policy</title>
+<style>
+  body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 780px; margin: 40px auto; padding: 0 24px; color: #1c2a44; line-height: 1.7; }
+  h1 { font-size: 1.6em; } h2 { font-size: 1.15em; margin-top: 1.8em; }
+  .en { color: #5a6b8a; }
+  ul { padding-left: 1.4em; } .stamp { color: #8a93a6; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>EzGlow 隐私政策 <span class="en">/ Privacy Policy</span></h1>
+<p class="stamp">2026-09-17 · 适用于 EzGlow（微软商店版与绿色版）</p>
+
+<h2>一句话结论 <span class="en">TL;DR</span></h2>
+<p><b>EzGlow 不收集、不上传任何数据。</b> 所有功能都在你的电脑本地完成，没有任何网络通信用于数据收集。</p>
+<p class="en"><b>EzGlow does not collect or upload any data.</b> Everything runs locally on your PC; there is no network communication for data collection.</p>
+
+<h2>1. 屏幕画面（抓屏）的用途 <span class="en">Screen capture</span></h2>
+<p>EzGlow 的玻璃拟态界面会读取你屏幕上本窗口身后的画面，仅用于在<b>本地</b>计算背景模糊效果。该画面<b>不保存到磁盘、不缓存、不上传、不发送给任何第三方</b>，模糊计算完成后立即丢弃。</p>
+<p class="en">The frosted-glass UI reads the screen area behind its own window, solely to compute the background blur <b>locally</b>. The captured pixels are <b>never saved, cached, uploaded, or shared</b>; they are discarded right after the blur is computed.</p>
+
+<h2>2. 亮度调节 <span class="en">Brightness control</span></h2>
+<p>变暗通过 Windows 标准显示 API（Gamma Ramp / DDC/CI）写入显示器。这属于本地显示控制，不涉及任何数据传输。</p>
+<p class="en">Dimming writes the display via standard Windows APIs (Gamma Ramp / DDC/CI). This is local display control; no data is transmitted.</p>
+
+<h2>3. 存储在本机的数据 <span class="en">Local data</span></h2>
+<ul>
+  <li>设置（语言、空闲等待、亮度等）保存在本机 <code>%LOCALAPPDATA%\GentleDim</code>；</li>
+  <li>运行日志保存在同一目录的 <code>logs</code> 子目录，仅用于排查问题；</li>
+  <li>以上数据<b>不会</b>被程序主动上传。卸载并删除该目录即完全清除。</li>
+</ul>
+<p class="stamp">说明：目录名沿用早期内部代号 <code>GentleDim</code>（应用显示名后来改为 EzGlow），
+两者不一致是有意保留的 —— 改名会让老用户已保存的设置全部读不到。</p>
+<p>可选的「开机自启」默认关闭：微软商店版由 Windows 的「设置 → 应用 → 启动」统一管理，绿色版写入您用户自己的 Run 注册表项，两种形态都可随时取消。</p>
+<p class="en">Settings and logs are stored locally under <code>%LOCALAPPDATA%\GentleDim</code> and are never uploaded. Uninstalling and deleting that folder removes everything. The folder keeps its original internal codename <code>GentleDim</code> (the display name was later changed to EzGlow); the mismatch is intentional, since renaming it would orphan existing users' saved settings. The optional "start with Windows" is off by default: the Microsoft Store edition uses the standard Windows Startup-apps setting, while the direct-exe edition writes to your own user Run key; both can be turned off at any time.</p>
+
+<h2>4. 网络访问 <span class="en">Network access</span></h2>
+<p>EzGlow 没有任何联网功能：不上传遥测、不检查更新、不请求任何网页。</p>
+<p class="en">EzGlow has no networking features: no telemetry, no update checks, no web requests.</p>
+
+<h2>5. 联系方式 <span class="en">Contact</span></h2>
+<p>如果你对这份政策或本软件有任何疑问，请联系：<strong style="background:#FAEEDA;color:#854F0B;padding:1px 6px;border-radius:4px">【必填 · 提交前把这里换成你的真实邮箱】</strong></p>
+<p class="en">If you have questions about this policy or the product, contact: <strong style="background:#FAEEDA;color:#854F0B;padding:1px 6px;border-radius:4px">[REQUIRED — replace with your real email before submission]</strong></p>
+<p>该邮箱需与「合作伙伴中心 → 支持联系人」填写的邮箱保持一致。</p>
+</body>
+</html>
