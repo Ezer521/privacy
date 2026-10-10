@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EzVibe 隐私政策</title>
+<style>
+  body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 820px; margin: 0 auto; padding: 24px 18px 60px; color: #24242c; line-height: 1.75; }
+  h1 { font-size: 1.6em; } h2 { font-size: 1.15em; margin-top: 1.8em; border-left: 4px solid #1470e8; padding-left: 10px; }
+  .meta { color: #6a6a74; font-size: 0.92em; }
+  .card { background: #f5f6fa; border-radius: 10px; padding: 14px 18px; margin: 14px 0; }
+  .en { color: #55555e; font-size: 0.95em; }
+  code { background: #ececf2; border-radius: 4px; padding: 1px 6px; }
+</style>
+</head>
+<body>
+
+<h1>EzVibe 隐私政策</h1>
+<p class="meta">生效日期：2026-10-09 ｜ 适用版本：3.5.0 及以上</p>
+
+<div class="card">
+<p><strong>一句话版本：EzVibe 完全在本地运行，不联网上传任何数据，没有账号体系。</strong><br>
+<span class="en">In short: EzVibe runs entirely on your device. It never uploads any data, and has no accounts.</span></p>
+</div>
+
+<h2>1. 我们收集什么</h2>
+<p>什么都不收集。EzVibe 没有遥测、没有广告 SDK、没有崩溃上报，也不向任何服务器发送您的任何数据。<strong>不存在把您的任何数据传输给我们或第三方的情况。</strong></p>
+<p class="en">We collect nothing. EzVibe contains no telemetry, no ads, no crash reporting, and never transmits any of your data to us or to third parties.</p>
+
+<h2>2. 它与哪些设备通信（局域网设备控制）</h2>
+<p>EzVibe 的核心功能是把本机 AI 工具的工作状态反映到<strong>您自己家中的智能设备</strong>上。它与米家中枢 / Home Assistant 之间的通信<strong>全部发生在您的家庭局域网内</strong>，是设备控制指令（开关灯、调色温等），不是数据上传；通信内容只含设备控制指令与状态。</p>
+<p class="en">EzVibe reflects your local AI tools' working status onto <strong>your own smart devices at home</strong>. All traffic to your Xiaomi hub / Home Assistant stays <strong>inside your home LAN</strong> and consists of device-control commands (light on/off, color temperature, etc.) — never data uploads.</p>
+
+<h2>3. 本地存储的数据</h2>
+<p>应用只把以下内容保存在<strong>您自己的电脑</strong>上（<code>%LOCALAPPDATA%\EzVibeFlutter\</code>）：</p>
+<ul>
+  <li>设置与凭据 —— 您配置的中枢/HA 连接信息，使用 Windows DPAPI <strong>按当前用户加密</strong>后存储；</li>
+  <li>AI 状态文件 —— 供 EzAway 等同家族工具读取的当前状态；</li>
+  <li>运行日志 —— 仅本机排障用，不含个人内容。</li>
+</ul>
+<p>删除该文件夹即彻底清除全部数据，卸载应用同理。</p>
+<p class="en">Only your settings, the AI status file, and local logs are stored on your own device under <code>%LOCALAPPDATA%\EzVibeFlutter\</code>. Connection credentials are encrypted per-user with Windows DPAPI. Delete the folder to erase everything; uninstalling does the same.</p>
+
+<h2>4. AI 状态钩子（可选、需您主动安装）</h2>
+<p>若您想让 AI 工具（Codex / Claude Code / Cursor 等）的状态驱动灯光，需要在应用内主动安装对应的状态钩子。钩子只做一件事：<strong>在本机写入一个状态文件</strong>供 EzVibe 读取。它不联网、不采集代码或文件内容。</p>
+<p class="en">If you want AI tools (Codex / Claude Code / Cursor, etc.) to drive your lights, you opt in by installing a status hook per tool from inside the app. The hook only <strong>writes a local status file</strong> for EzVibe to read. It has no network access and never collects code or file contents.</p>
+
+<h2>5. 开机自启</h2>
+<p>微软商店版的「开机自启」通过 Windows 标准的启动任务（StartupTask）实现，默认关闭；您可以随时在「任务管理器 → 启动应用」中开关。</p>
+<p class="en">The Store version's optional autostart uses a standard Windows Startup task (off by default), toggleable anytime in Task Manager → Startup apps.</p>
+
+<h2>6. 联系我们</h2>
+<p>对本政策或应用有任何疑问，请联系：<strong>996293839@qq.com</strong></p>
+<p class="en">Contact: <strong>996293839@qq.com</strong></p>
+<p>该邮箱需与「合作伙伴中心 → 支持联系人」填写的邮箱保持一致。</p>
+
+<p class="meta">本政策可能随版本更新而修订，修订后会在本页面更新生效日期。</p>
+
+</body>
+</html>
